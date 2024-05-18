@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    
 }
 
 html {
@@ -340,10 +341,115 @@ button {
     display: none;
     opacity: 0;
     transition: opacity 2s ease;
+    width: 100%;
+    height: 100%;
 }
 .dobra-direita {
     display: none;
     opacity: 0;
     transition: opacity 2s ease;
+    width: 100%;
+    height: 100%;
 }
 
+.dobra3-areas-de-atuacao {
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.dobra3-areas-de-atuacao h2 {
+    opacity: 1;
+}
+
+.dobra3-outer-wrapper {
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.dobra3-text, .dobra3-img {
+    width: 30%;
+    padding: 20px;
+}
+
+.dobra3-inner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid-cell {
+    width: 100%;
+}
+
+.grid-cell img {
+    filter: invert(100%);
+    width: 30%;
+}
+
+
+.dobra3-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.dobra4-contato {
+    padding: 20px;
+    padding-top: 90px;
+    background-color: rgba(0, 0, 0, 0.932);
+    background-image: url('images/dobra4-B.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dobra4-contato h2 {
+    opacity: 1;
+    margin-bottom: 100px;
+    color: white
+}
+
+@media (min-width: 1024px) {
+    .dobra4-contato {
+
+        text-align: center;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input, textarea {
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.message-input {
+    height: 200px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    z-index: 10;
+}

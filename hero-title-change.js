@@ -37,6 +37,7 @@ function inserirTitulosEsquerdos(displayEsquerda) {
         alargarTopBar();
         topBarHideAnchors();
         dobra2Mostrar();
+        dobra3Mostrar();
 
     }
 }
@@ -70,6 +71,7 @@ function inserirTitulosDireitos(displayDireita) {
         alargarTopBar();
         topBarHideAnchors();
         dobra2Mostrar();
+        dobra3Mostrar();
 
     }
 }
