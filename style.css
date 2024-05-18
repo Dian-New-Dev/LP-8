@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.topbar {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 0px;
+
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    border: 5px solid black;
+    position: relative;
+}
+
+.topbar-esquerda-prov, .topbar-direita-prov {
+    position: absolute;
+    top: 0;
+
+    width: 40%;
+    display: block;
+    text-align: center;
+    color: rgb(231, 220, 220);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.topbar-esquerda-prov {
+    left: 0;
+}
+
+.topbar-direita-prov {
+    right: 0;
+}
+
+.topbar-esquerda-prov h2, .topbar-direita-prov h2 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.topbar-esquerda, .topbar-direita {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(231, 220, 220);
+    transition: width 1s ease;
+}
+
+.logo {
+    display: block;
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 100%;
+    padding: 0px 0px;
+}
+
+
+.h1-padrao {
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding: 0px 0px;
+    position: relative;
+    z-index: 8;
+}
+
+.h1-padrao h1 {
+    opacity: 1;
+    font-size: 22px;
+    margin: 10px;
+    padding: 0;
+    line-height: 20px;
+    position: absolute;
+    z-index: 8;
+}
+
+.topbar a {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+
+
+.dobra1-hero {
+    background-image: url('images/ryan-moreno-w1_4YH5IhDg-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(229, 231, 240);
+    background-blend-mode: multiply;
+    z-index: 9;
+}
+
+.dobra1-img-wrapper {
+    background-color: rgba(128, 128, 128, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+@media (max-width: 999px) {
+    .dobra1-img-wrapper {
+        height: 700px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra1-img-wrapper {
+        height: 700px;
+    }
+}
+
+
+.dobra1-img {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+    transition: width 1s ease;
+    z-index: 9;
+
+}
+
+.dobra1-img1 {
+    position: absolute;
+    bottom: -70px;
+    left: -100px;
+    cursor: pointer;
+
+}
+
+.dobra1-img1:hover {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.dobra1-img2 {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+    transform-origin: bottom;
+    transform: scale(0.7) scaleX(-1);
+    -webkit-transform: scale(0.7) scaleX(-1);
+    cursor: pointer;
+}
+
+.dobra1-img2:hover {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+@media (max-width: 999px) {
+    .dobra1-img1, .dobra1-img2 {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra1-img1, .dobra1-img2 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+p {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+}
+
+.dobra1-text-wrapper1, .dobra1-text-wrapper2  {
+    width: 75%;
+    z-index: 1;
+    display: none;
+    
+}
+
+.dobra1-text-wrapper1 {
+    padding: 100px;
+}
+
+.dobra1-text-wrapper2 {
+    text-align: right;
+    padding: 100px;
+    margin-left: 25%;
+
+}
+
+button {
+    border: 0px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: black;
+    color: #f0f0f0;
+
+}
+
+.botao-escuro {
+
+}
+
+.botao-claro {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    z-index: 10;
+}
+
+.mostrar {
+    opacity: 1;
+}
+
+.esconder {
+    opacity: 0;
+}
+
+.dobra2-sobre-mim {
+    background-color: black;
+    color: #f0f0f0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-top: 1px solid black;
+    padding: 3% 15%;
+    line-height: 35px;
+}
+
+.dobra2-sobre-mim h2 {
+    color: #f0f0f0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.dobra2-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.dobra2-text {
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.dobra2-text p {
+    transition: opacity 0.5s ease;
+}
+
+.dobra2-img {
+    width: 100%;
+    padding: 0px 50px;
+    border-radius: 20px;
+
+}
+
+.dobra2-img img {
+    width: 100%;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.flex-inverse {
+    flex-direction: row-reverse;
+}
+
+.dobra-esquerda {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.dobra-direita {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
