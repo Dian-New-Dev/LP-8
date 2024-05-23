@@ -10,11 +10,12 @@ html, body {
 
 html {
     background-color: black;
+    height: 100%;
 }
 
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 main {
@@ -167,7 +168,38 @@ a {
 
     transition: width 1s ease;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    /* mudar isso aqui dps ^^^^ */
 
+}
+
+.botoes-iniciais {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: #9a5365;
+    padding: 20px;
+    border: 5px double black;
+    border-radius: 20px;
+    font-size: 26px;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botoes-iniciais:hover    {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
+
+.botoes-iniciais:hover ~ .dobra1-img1    {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.botoes-iniciais:hover ~ .dobra1-img2    {
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .dobra1-img1 {

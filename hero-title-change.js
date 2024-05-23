@@ -38,6 +38,7 @@ function inserirTitulosEsquerdos(displayEsquerda) {
         topBarHideAnchors();
         dobra2Mostrar();
         dobra3Mostrar();
+        esconderBotoesIniciais();
 
     }
 }
@@ -72,6 +73,7 @@ function inserirTitulosDireitos(displayDireita) {
         topBarHideAnchors();
         dobra2Mostrar();
         dobra3Mostrar();
+        esconderBotoesIniciais();
 
     }
 }
